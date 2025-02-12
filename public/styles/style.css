@@ -1,0 +1,389 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* VARIABLES */
+:root {
+  --primary-color: #fb6a27;
+  --dark-color: #0f0f0f;
+  --gray-color: gray;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* GLOBAL CSS */
+section {
+  padding: 110px 0;
+}
+
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-orange {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.text-orange {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/* CSS PER SECTION */
+/* NAVBAR */
+
+.navbar .navbar-brand {
+  font-size: 30px;
+  color: var(--dark-color);
+}
+
+.navbar .navbar-brand:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+/* HEADER */
+.header-section {
+  margin-top: 3rem;
+}
+
+.header-section .header-title {
+  font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 9px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+}
+
+.header-section .header-skill:hover {
+  background-color: #333333;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.header-section .header-skill i {
+  transition: 0.3s;
+}
+
+.header-section .header-img {
+  width: 100%;
+}
+
+.btn-pesan-sekarang {
+  background-color: #fb6a27;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  display: flex;
+  align-items: center;
+}
+
+
+/* PORTFOLIO */
+.portfolio-section .card .card-img-top {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn-pesan {
+  background-color: #fb6a27;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+
+.btn-pesan:hover {
+  background-color: #333333;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+/* Hamburger */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+body.dark-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* responsif */
+@media screen and (max-width: 1920px) {
+  .navbar {
+    padding: 27px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+  .portfolio-section .card .card-img-top {
+    height: 200px;
+  }
+
+  .portfolio-section .card .card-body {
+    padding: 15px 15px;
+  }
+
+  .portfolio-section .card .card-body h6 {
+    font-size: 20px;
+  }
+
+  .btn-pesan {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header-section .header-title {
+    font-size: var(--h2-font-size);
+  }
+
+  .portfolio-section .section-title {
+    font-size: 28px;
+  }
+
+  .navbar .nav-item .nav-link:hover,
+  .navbar .nav-item .nav-link.active {
+    color: var(--primary-color);
+  }
+
+  body.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 80px 0;
+  }
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .navbar .nav-link {
+    font-size: 15px;
+  }
+
+  .header-section {
+    margin-top: 1.5rem;
+  }
+
+  .header-section .header-img {
+    margin-top: 50px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-section .header-title {
+    font-size: 25px;
+  }
+
+  .header-section .header-skill {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+
+  .header-section h2 {
+    font-size: 18px;
+  }
+
+  .header-section p {
+    font-size: 13px;
+  }
+
+  .portfolio-section .section-title {
+    font-size: 23px;
+  }
+
+  .portfolio-section button {
+    width: 45px;
+    height: 30px;
+  }
+
+  .portfolio-section .card .card-img-top {
+    height: 140px;
+  }
+
+  .btn-pesan {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+
+  footer .text-white {
+    font-size: 10px;
+  }
+
+  footer .d-flex {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  section {
+    padding: 80px 20px;
+  }
+
+  .header-section .header-skill {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .header-section .header-img {
+    width: 95%;
+  }
+
+  .portfolio-section .text-orange {
+    font-size: 13px;
+  }
+
+  .portfolio-section .card .card-img-top {
+    height: 150px;
+  }
+
+  .portfolio-section .card .card-body {
+    padding: 10px;
+  }
+
+  .portfolio-section .card .card-body h6 {
+    font-size: 17px;
+  }
+
+  .portfolio-section .card .card-body p {
+    font-size: 12px;
+  }
+
+  .btn-pesan {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .portfolio-section button {
+    width: 40px;
+    height: 25px;
+  }
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar.dark-mode {
+  background-color: #333333;
+}
+
+.navbar.dark-mode .nav-link,
+.navbar.dark-mode .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar.dark-mode .nav-link:hover,
+.navbar.dark-mode .navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.header-section.dark-mode,
+.portfolio-section.dark-mode,
+.skills-section.dark-mode,
+.timeline-section.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.header-section.dark-mode .header-title,
+.header-section.dark-mode .header-skill {
+  color: #ffffff;
+}
+
+.header-section.dark-mode .header-skill:hover,
+.header-section.dark-mode p:hover {
+  color: var(--primary-color);
+}
+
+.card.dark-mode .card-body {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.btn-orange:hover {
+  background-color: #333333;
+  color: white;
+}

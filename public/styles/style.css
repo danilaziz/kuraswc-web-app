@@ -30,7 +30,7 @@ a {
 
 /* GLOBAL CSS */
 section {
-  padding: 110px 0;
+  padding: 120px 0;
 }
 
 section .section-title {
@@ -68,6 +68,10 @@ section .section-title {
 
 /* CSS PER SECTION */
 /* NAVBAR */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .navbar .navbar-brand {
   font-size: 30px;
@@ -136,6 +140,10 @@ section .section-title {
 
 
 /* PORTFOLIO */
+.portfolio-section {
+  background-color: #f9f9f9;
+}
+
 .portfolio-section .card .card-img-top {
   height: 250px;
   width: 100%;
@@ -156,6 +164,13 @@ section .section-title {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease-in-out;
 }
+
+/* FOOTER */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 
 /* Hamburger */
 .navbar-toggler-icon {

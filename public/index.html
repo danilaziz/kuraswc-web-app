@@ -32,6 +32,9 @@
             <a class="nav-link" href="#layanan">Layanan</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#tentangkami">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#galeri">Galeri</a>
           </li>
         </ul>
@@ -66,11 +69,14 @@
   </section>
 
   <!-- LAYANAN -->
-  <section class="portfolio-section" id="layanan">
+  <section class="layanan-section" id="layanan">
     <div class="container">
-      <h2 class="section-title mb-5">Layanan Yang Tersedia</h2>
+      <h2 class="section-title mb-4">Layanan Yang Tersedia</h2>
+      <p class="mb-5">Jasa kuras wc lombok memiliki layanan yang sangat lengkap untuk kebutuhan Anda. <br>
+        Dengan kehadiran fasilitas dan area ritel yang didedikasikan, Midpoint Place menciptakan ekosistem kerja di
+        dalam gedung yang menggabungkan kenyamanan dan efektifitas. </p>
 
-      <div class="swiper portfolio-swiper">
+      <div class="swiper layanan-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card">
@@ -176,44 +182,70 @@
     </div>
   </section>
 
-  <!-- GALERI -->
-  <section class="galeri-section" id="galeri">
+  <!-- TENTANG KAMI -->
+  <section class="tentang-section" id="tentangkami">
     <div class="container">
-      <h2 class="section-title mb-5">Galeri Kami</h2>
-
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="images/portfolio-3.jpg" alt="" class="card-img-top ">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-6 justify-content-center d-md-flex">
+          <div class="tentang">
+            <img src="images/portfolio-1.jpg" alt="Gambar 1">
+            <img src="images/portfolio-2.jpg" alt="Gambar 2">
+            <img src="images/portfolio-3.jpg" alt="Gambar 3">
+            <img src="images/portfolio-4.jpg" alt="Gambar 4">
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="images/portfolio-3.jpg" alt="" class="card-img-top ">
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="images/portfolio-3.jpg" alt="" class="card-img-top ">
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="images/portfolio-3.jpg" alt="" class="card-img-top ">
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="images/portfolio-3.jpg" alt="" class="card-img-top ">
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <img src="images/portfolio-3.jpg" alt="" class="card-img-top">
+        <div class="col-md-5 justify-content-center d-md-flex">
+          <div class="tentang-text">
+            <h2 class="fw-bold">Tentang Kami</h2>
+            <p>Deskripsi ketupat ini menjelaskan tentang gambar-gambar yang ada di dalamnya. Anda dapat menambahkan
+              informasi lebih lanjut di sini.</p>
           </div>
         </div>
       </div>
-      <a href="#" class="galeri-section">Lihat Lebih Banyak</a>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="galeri-section" id="galeri">
+    <div class="container">
+      <h2 class="section-title mb-4">Galeri Kami</h2>
+      <p class="mb-5">Jasa kuras wc lombok memiliki layanan yang sangat lengkap untuk kebutuhan Anda. <br>
+        Dengan kehadiran fasilitas dan area ritel yang didedikasikan, Midpoint Place menciptakan ekosistem kerja di
+        dalam gedung yang menggabungkan kenyamanan dan efektifitas. </p>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/portfolio-1.jpg" alt="" class="card-img-top ">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/portfolio-1.jpg" alt="" class="card-img-top ">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/portfolio-1.jpg" alt="" class="card-img-top ">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/portfolio-1.jpg" alt="" class="card-img-top ">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/portfolio-1.jpg" alt="" class="card-img-top ">
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/portfolio-1.jpg" alt="" class="card-img-top">
+          </div>
+        </div>
+      </div>
+      <a href="#" class="galeri-link">Lihat Lebih Banyak</a>
     </div>
   </section>
 
@@ -234,7 +266,7 @@
   <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".portfolio-swiper", {
+    var swiper = new Swiper(".layanan-swiper", {
       slidesPerView: 3,
       spaceBetween: 30,
       navigation: {

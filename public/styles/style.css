@@ -30,7 +30,7 @@ a {
 
 /* GLOBAL CSS */
 section {
-  padding: 120px 0;
+  padding: 140px 0;
 }
 
 section .section-title {
@@ -158,39 +158,47 @@ section .section-title {
 
 
 /* PORTFOLIO */
-.portfolio-section {
+.layanan-section {
   background-color: #091057;
 }
 
-.portfolio-section .section-title {
+.layanan-section .section-title {
   color: #fff;
   font-size: 32px;
   text-align: center;
 }
 
-.portfolio-section .card .card-img-top {
+.layanan-section .card .card-img-top {
   height: 250px;
   width: 100%;
   object-fit: cover;
 }
 
-.btn-pesan:hover {
-  background-color: #333333;
-  color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: 0.3s ease-in-out;
+.layanan-section .mb-5,
+.galeri-section .mb-5 {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 /* GALERI */
 .galeri-section {
-  background-color: #024CAA;
+  background: linear-gradient(to top, #333333, #024CAA 100%);
+  padding: 140px 0;
 }
 
 .galeri-section .section-title {
   color: #fff;
   font-size: 32px;
   text-align: center;
-  text-align: left;
+}
+
+.galeri-section p {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 .galeri-section a {
@@ -198,14 +206,14 @@ section .section-title {
   margin-top: 20px;
   padding: 10px 20px;
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .galeri-section a:hover {
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
 
@@ -213,12 +221,63 @@ section .section-title {
   text-align: center;
 }
 
+/* KETUPAT */
+.tentang-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #024CAA;
+  padding: 200px 0;
+}
+
+.tentang-container {
+  display: flex;
+  align-items: center;
+}
+
+.tentang {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  transform: rotate(45deg);
+  width: 500px;
+  height: 500px;
+}
+
+.tentang img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-45deg);
+  clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
+  border-radius: 10px;
+  /* Sudut melengkung */
+}
+
+.tentang-text {
+  color: #fff;
+  font-size: 32px;
+}
+
+.tentang-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.tentang-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 /* FOOTER */
 footer {
   background-color: #333333;
   color: #ffffff;
+  justify-content: space-between;
+  padding: 20px 100px;
+  border-top: 1px solid rgba(118, 149, 255, 0.2);
 }
-
 
 /* Hamburger */
 .navbar-toggler-icon {
@@ -238,15 +297,15 @@ body.dark-mode .navbar-toggler-icon {
 
 @media screen and (max-width: 1280px) {
 
-  .portfolio-section .card .card-img-top {
+  .layanan-section .card .card-img-top {
     height: 200px;
   }
 
-  .portfolio-section .card .card-body {
+  .layanan-section .card .card-body {
     padding: 15px 15px;
   }
 
-  .portfolio-section .card .card-body h6 {
+  .layanan-section .card .card-body h6 {
     font-size: 20px;
   }
 
@@ -268,7 +327,7 @@ body.dark-mode .navbar-toggler-icon {
     font-size: var(--h2-font-size);
   }
 
-  .portfolio-section .section-title {
+  .layanan-section .section-title {
     font-size: 28px;
   }
 
@@ -330,16 +389,16 @@ body.dark-mode .navbar-toggler-icon {
     font-size: 13px;
   }
 
-  .portfolio-section .section-title {
+  .layanan-section .section-title {
     font-size: 23px;
   }
 
-  .portfolio-section button {
+  .layanan-section button {
     width: 45px;
     height: 30px;
   }
 
-  .portfolio-section .card .card-img-top {
+  .layanan-section .card .card-img-top {
     height: 140px;
   }
 
@@ -371,23 +430,23 @@ body.dark-mode .navbar-toggler-icon {
     width: 95%;
   }
 
-  .portfolio-section .text-orange {
+  .layanan-section .text-orange {
     font-size: 13px;
   }
 
-  .portfolio-section .card .card-img-top {
+  .layanan-section .card .card-img-top {
     height: 150px;
   }
 
-  .portfolio-section .card .card-body {
+  .layanan-section .card .card-body {
     padding: 10px;
   }
 
-  .portfolio-section .card .card-body h6 {
+  .layanan-section .card .card-body h6 {
     font-size: 17px;
   }
 
-  .portfolio-section .card .card-body p {
+  .layanan-section .card .card-body p {
     font-size: 12px;
   }
 
@@ -424,7 +483,7 @@ body.dark-mode {
 }
 
 .header-section.dark-mode,
-.portfolio-section.dark-mode,
+.layanan-section.dark-mode,
 .skills-section.dark-mode,
 .timeline-section.dark-mode {
   background-color: #1e1e1e;

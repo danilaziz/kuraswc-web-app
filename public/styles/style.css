@@ -69,18 +69,21 @@ section .section-title {
 /* CSS PER SECTION */
 /* NAVBAR */
 .navbar {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #024CAA;
 }
 
-.navbar .navbar-brand {
-  font-size: 30px;
-  color: var(--dark-color);
+.navbar .container {
+  padding: 0 100px;
+  border-bottom: 1px solid rgba(118, 149, 255, 0.2);
 }
 
-.navbar .navbar-brand:hover {
-  color: var(--primary-color);
-  transition: 0.3s ease-in-out;
+.navbar .navbar-brand img {
+  height: 60px;
+}
+
+.navbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 16px;
 }
 
 .navbar .nav-item .nav-link:hover,
@@ -94,26 +97,41 @@ section .section-title {
 
 /* HEADER */
 .header-section {
+  background-color: #024CAA;
   margin-top: 3rem;
 }
 
 .header-section .header-title {
-  font-size: var(--h1-font-size);
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.header-section .text-orange {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.header-section .fw-normal {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .header-section .header-skill {
+  margin-top: 15px;
   background-color: var(--primary-color);
   color: #fff;
   border-radius: 10px;
   padding: 9px 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 15px;
+  transition: 0.5s;
 }
 
 .header-section .header-skill:hover {
-  background-color: #333333;
+  background-color: #78B3CE;
   color: #fff;
-  transition: 0.3s ease-in-out;
 }
 
 .header-section .header-skill i {
@@ -141,7 +159,13 @@ section .section-title {
 
 /* PORTFOLIO */
 .portfolio-section {
-  background-color: #f9f9f9;
+  background-color: #091057;
+}
+
+.portfolio-section .section-title {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
 }
 
 .portfolio-section .card .card-img-top {
@@ -150,19 +174,43 @@ section .section-title {
   object-fit: cover;
 }
 
-.btn-pesan {
-  background-color: #fb6a27;
-  color: white;
-  border-radius: 10px;
-  padding: 10px 10px;
-  font-size: 15px;
-}
-
 .btn-pesan:hover {
   background-color: #333333;
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: 0.3s ease-in-out;
+}
+
+/* GALERI */
+.galeri-section {
+  background-color: #024CAA;
+}
+
+.galeri-section .section-title {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  text-align: left;
+}
+
+.galeri-section a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.galeri-section a:hover {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.galeri-section .container {
+  text-align: center;
 }
 
 /* FOOTER */
